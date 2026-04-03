@@ -102,7 +102,7 @@ public:
         //   2. Copy m_length from other
       m_length = other.m_length; 
         //   3. Allocate new memory: new char[m_length + 1]
-      m_data = new char[m_length + 1] 
+      m_data = new char[m_length + 1];
         //   4. Copy string data using strcpy()
        strcpy(m_data , other.m_data);
         
@@ -129,9 +129,9 @@ public:
         //   3. Delete old m_data (delete[])
        delete[]m_data;
         //   4. Copy m_length from other
-       m_length  other.m_length;
+       m_length = other.m_length;
         //   5. Allocate new memory: new char[m_length + 1]
-       m_data _ new char [m_length + 1];
+       m_data = new char [m_length + 1];
         //   6. Copy string data using strcpy()
         strcpy(m_data , other.m_data);
         //   7. Return *this
